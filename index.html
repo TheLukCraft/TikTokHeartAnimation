@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja Serduszka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+      body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.heart-animation {
+    font-size: 2em;
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+/* Styl dla animacji kliknięcia telefonu będzie wymagał dodatkowej pracy */
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="heart-animation">
+            <i class="fas fa-heart"></i> 1000x = 5 pkt
+        </div>
+        <div class="phone-animation">
+            <!-- Tutaj umieścimy ikonę telefonu i animację kliknięcia -->
+        </div>
+    </div>
+    <script>
+        // JavaScript dla animacji zostanie dodany później
+    </script>
+</body>
+</html>
